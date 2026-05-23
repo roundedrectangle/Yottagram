@@ -6,12 +6,11 @@ QT += dbus multimedia location contacts xml
 
 CONFIG += c++2a link_pkgconfig sailfishapp iostream
 
-QMAKE_CXXFLAGS += -std=c++2a -O3
-QMAKE_CXXFLAGS -= -g
-QMAKE_CXXFLAGS_DEBUG -= -g
+QMAKE_CXXFLAGS_RELEASE += -std=c++2a -O3
+QMAKE_CXXFLAGS_RELEASE -= -g
 QMAKE_CXXFLAGS_DEBUG -= -O1
 QMAKE_CXXFLAGS_DEBUG -= -O2
-QMAKE_CXXFLAGS_DEBUG *= -O0 -Wno-unused-parameter
+QMAKE_CXXFLAGS_DEBUG *= -O0 -Wno-unused-parameter -g
 
 INCLUDEPATH += /usr/include/glib-2.0 $$PWD/src
 
@@ -22,6 +21,7 @@ DEFINES += QT_STATICPLUGIN APP_VERSION=$$(APP_VERSION)
 CONFIG -= debug_and_release
 CONFIG(debug, debug|release): {
     message(Building for debug)
+    CONFIG += DEBUG
 }
 CONFIG(release, debug|release): {
     message(Building for release)

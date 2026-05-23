@@ -693,7 +693,7 @@ QString Chat::actionText()
         return tr("Many people are typing...");
     } else if (typingCount > 1) {
         QPair<int64_t, int64_t> users = {0,0};
-        for (QHash<int64_t, ChatAction>::iterator it; it != _chatActions.end(); ++it) {
+        for (QHash<int64_t, ChatAction>::iterator it = _chatActions.begin(); it != _chatActions.end(); ++it) {
             if (it.value() == ChatAction::Typing) {
                 if (users.first == 0) users.first = it.key();
                 else users.second = it.key();
@@ -1293,6 +1293,7 @@ std::vector<string> Chat::splitToVector(QString string, QString separator)
 
 void Chat::sendMessage(QString message, int64_t replyToMessageId)
 {
+    qDebug() << "sendMessage";
     auto sendMessage = new td_api::sendMessage();
     sendMessage->chat_id_ = _chat->id_;
 
@@ -1571,6 +1572,8 @@ void Chat::sendVoiceNote(QString path, QString waveform, int64_t duration, int64
 
 void Chat::sendSticker(int32_t fileId, int64_t replyToMessageId)
 {
+    if (fileId == 0) return;
+
     auto sendMessage = new td_api::sendMessage();
     sendMessage->chat_id_ = _chat->id_;
     sendMessage->message_thread_id_ = _currentTopicId;

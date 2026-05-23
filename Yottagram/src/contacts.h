@@ -11,7 +11,8 @@ class Contacts : public QAbstractListModel
 public:
     enum ContactRoles {
         IdRole = Qt::UserRole + 1,
-        UserRole
+        UserRole,
+        NameRole,
     };
 
     explicit Contacts(QObject *parent = nullptr);

@@ -1158,7 +1158,7 @@ Page {
                         }
 
                         onTextChanged: {
-                            chat.sendAction(text.length > 0 ? Chat.Typing : Chat.None)
+                            chat.sendAction(textInput.length > 0 ? Chat.Typing : Chat.None)
                             taggingTimeout.start()
                         }
 

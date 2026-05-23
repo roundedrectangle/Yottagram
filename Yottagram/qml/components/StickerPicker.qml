@@ -94,7 +94,7 @@ Item {
                     BusyIndicator {
                         size: BusyIndicatorSize.Medium
                         anchors.centerIn: parent
-                        running: (!thumbnail || !thumbnail.isDownloaded || thumbnail.isDownloading) && type === ""
+                        running: (!thumbnail || !thumbnail.isDownloaded || thumbnail.isDownloading) && (type === "sticker" || type === undefined)
                     }
                 }
 

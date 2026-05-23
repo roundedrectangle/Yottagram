@@ -41,18 +41,27 @@ void StickerSet::setStickerSet(td_api::stickerSet *stickerSet)
 
     for (auto& sticker : _stickerSet->stickers_) {
         _stickerIds.append(sticker->sticker_->id_);
-        _thumbnailIds.append(sticker->thumbnail_->file_->id_);
         _files->appendFile(move(sticker->sticker_), "sticker");
-        _files->appendFile(move(sticker->thumbnail_->file_), "thumbnail");
+        if (sticker->thumbnail_) {
+            _thumbnailIds.append(sticker->thumbnail_->file_->id_);
+            _files->appendFile(move(sticker->thumbnail_->file_), "thumbnail");
+        } else {
+            _thumbnailIds.append(_stickerIds.last());
+        }
     }
 
-    _type = stickerSet->sticker_type_->get_id() == td_api::stickerTypeCustomEmoji::ID ? "customEmoji" : "sticker";
+    _type = _stickerSet->sticker_type_->get_id() == td_api::stickerTypeCustomEmoji::ID ? "customEmoji" : "sticker";
 }
 
 void StickerSet::setStickers(td_api::stickers *stickers, QString type)
 {
+    beginResetModel();
+
     while (_stickerIds.count())
         _stickerIds.removeLast();
+
+    while (_thumbnailIds.count())
+        _thumbnailIds.removeLast();
 
     if (_stickers != nullptr) {
         for (auto& sticker : _stickers->stickers_) {
@@ -74,6 +83,8 @@ void StickerSet::setStickers(td_api::stickers *stickers, QString type)
     }
 
     _type = type;
+
+    endResetModel();
 }
 
 void StickerSet::setTelegramManager(shared_ptr<TelegramManager> manager)
@@ -149,6 +160,7 @@ QVariant StickerSet::data(const QModelIndex &index, int role) const
     {
         if (_stickerIds.empty()) return QVariant();
 
+        qDebug() << "data: index: " << index.row() << " sticker id: " << _stickerIds[index.row()];
         auto sticker = _files->getFile(_stickerIds[index.row()]).get();
         if (sticker != nullptr) {
             return QVariant::fromValue(sticker);
@@ -160,6 +172,7 @@ QVariant StickerSet::data(const QModelIndex &index, int role) const
     {
         if (_thumbnailIds.empty()) return QVariant();
 
+        qDebug() << "data: index: " << index.row() << " sticker id: " << _stickerIds[index.row()] << " thumbnail id: " << _thumbnailIds[index.row()];
         auto thumbnail = _files->getFile(_thumbnailIds[index.row()]).get();
         if (thumbnail != nullptr) {
             return QVariant::fromValue(thumbnail);

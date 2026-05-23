@@ -126,7 +126,7 @@ Item {
                     BusyIndicator {
                         size: BusyIndicatorSize.Medium
                         anchors.centerIn: parent
-                        running: (!thumbnail || !thumbnail.isDownloaded || thumbnail.isDownloading) && type === "customEmoji"
+                        running: (!thumbnail || !thumbnail.isDownloaded || thumbnail.isDownloading) && (type === "customEmoji" || type === undefined)
                     }
                 }
 

@@ -73,11 +73,14 @@ void Notifications::updateNotificationGroup(td_api::updateNotificationGroup *upd
 {
     qDebug() << __PRETTY_FUNCTION__;
     Chat* chat = _chatList->getChat(updateNotificationGroup->chat_id_);
+    if (chat == nullptr) {
+        return;
+    }
 
     for (auto& notification : updateNotificationGroup->added_notifications_) {
         qDebug() << "New notification: " << notification->id_ << " from: " << chat->getTitle() << " notification group id: " << updateNotificationGroup->notification_group_id_;
         if (chat->isOpen() || notification->is_silent_ || _notifications.contains(notification->id_)) continue;
-        switch (notification->type_.get()->get_id()) {
+        switch (notification->type_->get_id()) {
         case td_api::notificationTypeNewMessage::ID:
         {
             td_api::notificationTypeNewMessage* newMessage = static_cast<td_api::notificationTypeNewMessage*>(notification->type_.get());
@@ -86,7 +89,7 @@ void Notifications::updateNotificationGroup(td_api::updateNotificationGroup *upd
             message.setUsers(_users);
             message.setMessage(newMessage->message_.get());
             shared_ptr<User> user = _users->getUser(message.getSenderUserId());
-            if (user == nullptr) continue;
+            if (!user) continue;
 
             QString textFrom = "";
             if (chat->getChatType() == "group" || chat->getChatType() == "supergroup") {
@@ -113,10 +116,6 @@ void Notifications::updateNotificationGroup(td_api::updateNotificationGroup *upd
             break;
         case td_api::notificationTypeNewSecretChat::ID:
         {
-            td_api::notificationTypeNewSecretChat* newSecretChat = static_cast<td_api::notificationTypeNewSecretChat*>(notification->type_.get());
-            auto chat = _chatList->getChat(updateNotificationGroup->chat_id_);
-            if (chat == nullptr) continue;
-
             Notification* newNotification = new Notification;
             newNotification->setCategory("x-verdanditeam.yottagram.im");
             newNotification->setAppName("Yottagram");
@@ -133,6 +132,8 @@ void Notifications::updateNotificationGroup(td_api::updateNotificationGroup *upd
             newNotification->publish();
             _notifications[notification->id_] = newNotification;
         }
+        default:
+            break;
         }
     }
 

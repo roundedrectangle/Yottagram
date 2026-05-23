@@ -6,8 +6,8 @@ Name:       yottagram
 %{?qtc_builddir:%define _builddir %qtc_builddir}
 #global debug_package %{nil}
 Summary:    Yottagram
-Version:    0.7.0
-Release:    54
+Version:    0.7.3
+Release:    1
 Group:      Qt/Qt
 License:    GPLv3
 URL:        http://verdanditeam.com/

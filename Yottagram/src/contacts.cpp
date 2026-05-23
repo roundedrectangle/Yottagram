@@ -39,6 +39,8 @@ QVariant Contacts::data(const QModelIndex &index, int role) const
         QQmlEngine::setObjectOwnership(user, QQmlEngine::CppOwnership);
         return QVariant::fromValue(user);
     }
+    case ContactRoles::NameRole:
+        return contact->getName();
     default:
         return QVariant();
     }
@@ -49,6 +51,7 @@ QHash<int, QByteArray> Contacts::roleNames() const
     QHash<int, QByteArray> roles;
     roles[IdRole] = "id";
     roles[UserRole] = "user";
+    roles[NameRole] = "name";
     return roles;
 }
 
