@@ -180,6 +180,7 @@ TRANSLATIONS += \
     translations/yottagram-es.ts \
     translations/yottagram-it.ts \
     translations/yottagram-pl.ts \
+    translations/yottagram-ru.ts \
     translations/yottagram-sv.ts \
     translations/yottagram-zh_CN.ts
 
