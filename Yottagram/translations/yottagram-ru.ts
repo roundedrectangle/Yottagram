@@ -107,15 +107,15 @@
     <name>AutoDownloadSettings</name>
     <message>
         <source>Load slow preset</source>
-        <translation>Использовать медленные предустановки</translation>
+        <translation>Использовать низкий расход трафика</translation>
     </message>
     <message>
         <source>Load medium preset</source>
-        <translation>Использовать средние предустановки</translation>
+        <translation>Использовать средний расход трафика</translation>
     </message>
     <message>
         <source>Load high preset</source>
-        <translation>Использовать качественные предустановки</translation>
+        <translation>Использовать высокий расход трафика</translation>
     </message>
     <message>
         <source>Auto download settings</source>
@@ -174,7 +174,7 @@
     </message>
     <message>
         <source>Invite link</source>
-        <translation>Пригласительная ссылка</translation>
+        <translation>Ссылка-приглашение</translation>
     </message>
     <message>
         <source>Users</source>
@@ -190,23 +190,23 @@
     </message>
     <message>
         <source>Default</source>
-        <translation>По умолчания</translation>
+        <translation>По умолчанию</translation>
     </message>
     <message>
         <source>Mute for 1 hour</source>
-        <translation>Заглушить на 1 час</translation>
+        <translation>Отключить на 1 час</translation>
     </message>
     <message>
         <source>Mute for 8 hours</source>
-        <translation>Заглушить на 8 часов</translation>
+        <translation>Отключить на 8 часов</translation>
     </message>
     <message>
         <source>Mute for 2 days</source>
-        <translation>Заглушить на 2 дня</translation>
+        <translation>Отключить на 2 дня</translation>
     </message>
     <message>
         <source>Customize</source>
-        <translation>Собственные настройки</translation>
+        <translation>Настроить</translation>
     </message>
     <message>
         <source>Clear history</source>
@@ -975,15 +975,15 @@
     </message>
     <message>
         <source>Mute for 1 hour</source>
-        <translation>Заглушить на час</translation>
+        <translation>Отключить на час</translation>
     </message>
     <message>
         <source>Mute for 8 hours</source>
-        <translation>Заглушить на 8 часов</translation>
+        <translation>Отключить на 8 часов</translation>
     </message>
     <message>
         <source>Mute for 2 days</source>
-        <translation>Заглушить на 2 дня</translation>
+        <translation>Отключить на 2 дня</translation>
     </message>
     <message>
         <source>Customize</source>
@@ -1098,15 +1098,15 @@
     </message>
     <message>
         <source>Mute for 1 hour</source>
-        <translation>Заглушить на час</translation>
+        <translation>Отключить на час</translation>
     </message>
     <message>
         <source>Mute for 8 hours</source>
-        <translation>Заглушить на 8 часов</translation>
+        <translation>Отключить на 8 часов</translation>
     </message>
     <message>
         <source>Mute for 2 days</source>
-        <translation>Заглушить на 2 дня</translation>
+        <translation>Отключить на 2 дня</translation>
     </message>
     <message>
         <source>Customize</source>
@@ -1207,15 +1207,15 @@
     </message>
     <message>
         <source>Mute for 1 hour</source>
-        <translation>Заглушить на час</translation>
+        <translation>Отключить на час</translation>
     </message>
     <message>
         <source>Mute for 8 hours</source>
-        <translation>Заглушить на 8 часов</translation>
+        <translation>Отключить на 8 часов</translation>
     </message>
     <message>
         <source>Mute for 2 days</source>
-        <translation>Заглушить на 2 дня</translation>
+        <translation>Отключить на 2 дня</translation>
     </message>
     <message>
         <source>Customize</source>
