@@ -321,7 +321,7 @@
     </message>
     <message>
         <source>Swipe from bottom to access upload options</source>
-        <translation>Свайп вверх для других опций загрузки</translation>
+        <translation>Свайпните вверх для других опций загрузки</translation>
     </message>
     <message>
         <source>%1 online</source>
@@ -349,11 +349,11 @@
     </message>
     <message>
         <source>%1 is recording voicenote</source>
-        <translation>%1 записывает видеосообщение</translation>
+        <translation>%1 записывает голосовое сообщение</translation>
     </message>
     <message>
         <source>%1 is uploading voicenote</source>
-        <translation>%1 отправляет видеосообщение</translation>
+        <translation>%1 отправляет голосовое сообщение</translation>
     </message>
     <message>
         <source>%1 is uploading photo</source>
@@ -389,7 +389,7 @@
     </message>
     <message>
         <source>%1 is watching animations</source>
-        <translation>%1 разглядывает анимашки</translation>
+        <translation>%1 смотрит анимации</translation>
     </message>
     <message>
         <source>Channel created</source>
@@ -417,11 +417,11 @@
     </message>
     <message>
         <source>Strike-through</source>
-        <translation>Перечёркнутый</translation>
+        <translation>Зачёркнутый</translation>
     </message>
     <message>
         <source>Monospace</source>
-        <translation>Моноширный</translation>
+        <translation>Моно</translation>
     </message>
 </context>
 <context>
@@ -436,7 +436,7 @@
     </message>
     <message>
         <source>Set as read</source>
-        <translation>Прочитать</translation>
+        <translation>Пометить прочитанным</translation>
     </message>
     <message>
         <source>Delete chat</source>
