@@ -569,7 +569,7 @@
     <name>LocationPicker</name>
     <message>
         <source>Location Picker</source>
-        <translation>Выберете локацию</translation>
+        <translation>Выбор геопозиции</translation>
     </message>
     <message>
         <source>Latitude:</source>
@@ -616,7 +616,7 @@
     </message>
     <message>
         <source>%1 joined telegram</source>
-        <translation>%1 теперь в Telegrama</translation>
+        <translation>%1 теперь в Telegram</translation>
     </message>
     <message>
         <source>Group created</source>
@@ -664,11 +664,11 @@
     </message>
     <message>
         <source>Message unsupported</source>
-        <translation>Сообщение не поддерживается!</translation>
+        <translation>Сообщение не поддерживается</translation>
     </message>
     <message>
         <source>Users joined</source>
-        <translation>Люди пришли.</translation>
+        <translation>Пользователи присоединились</translation>
     </message>
     <message>
         <source>Poll</source>
@@ -739,7 +739,7 @@
     </message>
     <message>
         <source>You must download it first</source>
-        <translation>Вам надо сначало это загрузить..</translation>
+        <translation>Сначала вам нужно загрузить это</translation>
     </message>
     <message>
         <source>Delete</source>
@@ -843,7 +843,7 @@
     </message>
     <message>
         <source>Anonymous voting</source>
-        <translation>Анонимное Голосование.</translation>
+        <translation>Анонимное голосование</translation>
     </message>
     <message>
         <source>Multiple answers</source>
@@ -858,7 +858,7 @@
     <name>ProxySettings</name>
     <message>
         <source>Add server</source>
-        <translation>Добавить сервак</translation>
+        <translation>Добавить сервер</translation>
     </message>
     <message>
         <source>Disable proxy</source>
@@ -890,7 +890,7 @@
     </message>
     <message>
         <source>Port</source>
-        <translation>Опрос</translation>
+        <translation>Порт</translation>
     </message>
     <message>
         <source>Username</source>
@@ -898,11 +898,11 @@
     </message>
     <message>
         <source>Password</source>
-        <translation type="unfinished">Hasło</translation>
+        <translation>Пароль</translation>
     </message>
     <message>
         <source>Secret</source>
-        <translation>Пароль</translation>
+        <translation>Секрет</translation>
     </message>
     <message>
         <source>Proxy Url</source>
@@ -948,7 +948,7 @@
     </message>
     <message>
         <source>1 week</source>
-        <translation>Неделя</translation>
+        <translation>1 неделя</translation>
     </message>
     <message>
         <source>30 seconds</source>
@@ -967,11 +967,11 @@
     </message>
     <message>
         <source>Daemon</source>
-        <translation>Демон.</translation>
+        <translation>Демон</translation>
     </message>
     <message>
         <source>Private chat notification global settings</source>
-        <translation>Глобальные настройки приватных чатов</translation>
+        <translation>Глобальные настройки уведомлений приватных чатов</translation>
     </message>
     <message>
         <source>Mute for 1 hour</source>
@@ -1019,7 +1019,7 @@
     </message>
     <message>
         <source>Animated stickers</source>
-        <translation>Анимировать стикеры</translation>
+        <translation>Анимированные стикеры</translation>
     </message>
     <message>
         <source>Include muted chats in unread chats and messages counts</source>
@@ -1035,11 +1035,11 @@
     </message>
     <message>
         <source>About</source>
-        <translation>О програмке</translation>
+        <translation>О программе</translation>
     </message>
     <message>
         <source>Move yottagram&apos;s data</source>
-        <translation>Переместить данные Йоттаграмма</translation>
+        <translation>Переместить данные Yottagram</translation>
     </message>
     <message>
         <source>Animated emoji</source>
@@ -1047,11 +1047,11 @@
     </message>
     <message>
         <source>Chat bubbles</source>
-        <translation>Активация пузырей в чатах</translation>
+        <translation>Пузыри сообщений</translation>
     </message>
     <message>
         <source>Long press to select mute duration</source>
-        <translation>Долгое нажатие для выбора продолжительности заглушения</translation>
+        <translation>Зажмите для выбора длительности отключения уведомлений</translation>
     </message>
     <message>
         <source>Voice message volume boost</source>
@@ -1254,7 +1254,7 @@
     </message>
     <message>
         <source>Select subtitle file</source>
-        <translation>Выберете файл субтитров</translation>
+        <translation>Выберите файл субтитров</translation>
     </message>
 </context>
 <context>
