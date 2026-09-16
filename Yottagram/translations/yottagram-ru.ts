@@ -9,7 +9,7 @@
     </message>
     <message>
         <source>Made by Michał Szczepaniak. Based on tdlib.</source>
-        <translation>Создано Михаилом-Щепаняком. Основано на tdlib.</translation>
+        <translation>Создано Михалом Щепаняком. Основано на tdlib.</translation>
     </message>
     <message>
         <source>Licensed under GPLv3</source>
