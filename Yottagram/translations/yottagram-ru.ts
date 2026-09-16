@@ -214,7 +214,7 @@
     </message>
     <message>
         <source>Long press to select mute duration</source>
-        <translation>Долгое нажатие для выбора продолжительности заглушения</translation>
+        <translation>Зажмите для выбора длительности отключения уведомлений</translation>
     </message>
 </context>
 <context>
@@ -253,7 +253,7 @@
     </message>
     <message>
         <source>%L1 forwarded messages</source>
-        <translation>%L1 пересланых сообщений</translation>
+        <translation>%L1 пересланных сообщений</translation>
     </message>
     <message>
         <source>Type the text...</source>
