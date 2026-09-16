@@ -529,7 +529,7 @@
     </message>
     <message>
         <source>Select contacts to import</source>
-        <translation>Выберете контакты для импорта</translation>
+        <translation>Выберите контакты для импорта</translation>
     </message>
     <message>
         <source>Search</source>
